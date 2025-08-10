@@ -130,10 +130,10 @@ const Index = () => {
   const totalFiat = assets.reduce((sum, a) => sum + a.fiat, 0);
 
   const txs = [
-    { id: "1", type: "send" as const, symbol: "ETH", amount: 0.12, counterparty: "0x9f...d21", timestamp: Date.now() - 45 * 60 * 1000 },
-    { id: "2", type: "receive" as const, symbol: "USDT", amount: 150, counterparty: "TY3...9p", timestamp: Date.now() - 6 * 60 * 60 * 1000 },
-    { id: "3", type: "send" as const, symbol: "SOL", amount: 2.5, counterparty: "7Gh...K2", timestamp: Date.now() - 24 * 60 * 60 * 1000 },
-    { id: "4", type: "receive" as const, symbol: "BTC", amount: 0.003, counterparty: "bc1q...7a", timestamp: Date.now() - 3 * 24 * 60 * 60 * 1000 },
+    { id: "1", type: "send" as const, symbol: "BTC", amount: 0.0023, counterparty: "0x9f...d21", timestamp: Date.now() - 45 * 60 * 1000 },
+    { id: "2", type: "receive" as const, symbol: "BTC", amount: 0.00054, counterparty: "TY3...9p", timestamp: Date.now() - 6 * 60 * 60 * 1000 },
+    { id: "3", type: "send" as const, symbol: "BTC", amount: 0.0089, counterparty: "7Gh...K2", timestamp: Date.now() - 24 * 60 * 60 * 1000 },
+    { id: "4", type: "receive" as const, symbol: "BTC", amount: 0.0009, counterparty: "bc1q...7a", timestamp: Date.now() - 3 * 24 * 60 * 60 * 1000 },
   ];
 
   if (isLoading) return <p className="p-4 text-zinc-300">Loading prices...</p>;
